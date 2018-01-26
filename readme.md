@@ -54,7 +54,7 @@
         git remote -v
         
     #push to github
-        git push -u <branch>
+        git push -u origin <branch>
         
         
         
