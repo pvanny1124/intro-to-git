@@ -41,4 +41,20 @@
     #switch branches
         git checkout <branch-name>
         
+    #merging branches
+        git merge <branch you want to merge>
+        
+    #removing branches
+        git branch -d <branch to delete>
+        
+#linking github
+    git remote add origin <url to repository>
+    
+    #check if the origin was added
+        git remote -v
+        
+    #push to github
+        git push -u <branch>
+        
+        
         
