@@ -1,59 +1,81 @@
-#initialize git in a directory
-    git init
+initialize git in a directory:
 
-#Add files to staging area
+    git init
+    --Only do this in directories that you want to push to git
+    --don't make the mistake of initializing git in the whole workspace
+
+Add files to staging area:
+
     git add <filename>
 
-#remove files from staging area
+remove files from staging area:
+
     git reset HEAD <filename>
     
-#add files of a certain type to staging area
+add files of a certain type to staging area:
+
     git add *.<extension>
 
-#add all files to staging area
+add all files to staging area:
+
     git add -A
 
-#commit 
+committing:
+
     git commit -m "<message>"
     
-#see whats tracked/untracked
+see whats tracked/untracked:
 
     git status
 
-#check the history of commits
-    git log
+check the history of commits:
 
-#create hidden files
-    .<name>.<extension>
-    
-#gitignore
-    create .gitignore and write files in this that you want to ignore from staging area
-    
-#Git branches
+         git log
+        --to flashback into a previous commit, use git checkout <commit hash>
+        --to come back to the most recent commit, use git checkout master
 
-    #list all branches
+create hidden files:
+
+        touch .<name>.<extension>
+         --to list all hidden file use: ls -a
+    
+gitignore:
+
+        create .gitignore with touch .gitignore, and write files in this that you want to ignore from staging area
+    
+GIT BRANCHES:
+
+list all branches:
+
         git branch
     
-    #create a new branch
+create a new branch:
+
         git checkout -b <name of branch>
             -switches to new branch automatically
             
-    #switch branches
+switch branches:
+
         git checkout <branch-name>
         
-    #merging branches
+merging branches:
+
         git merge <branch you want to merge>
         
-    #removing branches
+removing branches:
+
         git branch -d <branch to delete>
         
-#linking github
-    git remote add origin <url to repository>
+linking github:
+
+        git remote add origin <url to repository>
     
-    #check if the origin was added
+check if the origin was added:
+
         git remote -v
         
-    #push to github
+push to github:
+
         git push -u origin <branch>
         
         
